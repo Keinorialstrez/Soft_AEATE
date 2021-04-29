@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="717*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Продажи" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" />
+        <Button Content="Покупки" HorizontalAlignment="Left" Margin="14,76,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.695,-5.846"/>
+        <Button x:Name="ButSel" Content="Зарплата" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Click="ButSel_Click"/>
+        <TextBox x:Name="TestTex" HorizontalAlignment="Left" Margin="39,36,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
 
     </Grid>
 </Window>

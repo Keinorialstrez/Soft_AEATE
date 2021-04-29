@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Soft_AEATE.Codes;
 
 namespace Soft_AEATE
 {
@@ -23,6 +24,14 @@ namespace Soft_AEATE
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+
+        private void ButSel_Click(object sender, RoutedEventArgs e)
+        {
+            Employee Chad = new Employee
+               ("Чад", "GayBar12Street", 25, "Dancer", 15, 1591);
+            TestTex.Text = Chad.Name + " Salary is " +  Chad.Salary;
         }
     }
 }
